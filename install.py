@@ -2,8 +2,10 @@
 import os
 import time
 
-usrname = input("| Enter your server's username :> ")
-websvr = input("| Enter your web server's name :> ")
+usrname = input("| Username to install :> ")
+websvr = input("| Webserver name :> ")
+botkey = input("| Telegram bot api key [ 123432988:xyzabcdefjklmnopqrs ] :> ")
+chatid = input("| Telegram chat id :> ")
 
 if usrname == "root":
  home = "/root"
@@ -20,14 +22,14 @@ import os
 ACCESS_LOG = "/var/log/{websvr}/access.log"
 #IP_FILE = "/root/ip"
 #Log_file = "/var/log/moni.log"
-"""+"""
+
 #fileo = open(Log_file,"a")
 
 #print("Monitoring Nginx Server.....")
 
-turl = f"https://api.telegram.org/bot7953169835:AAEocJ508G0seJAwlur44r2qDk8r7FiJaCg/sendMessage"
-chat_id = '-4974982485'
-
+turl = f"https://api.telegram.org/bot{botkey}/sendMessage"
+chat_id = '{chatid}'
+"""+"""
 
 #c_time = datetime.now()
 #year = c_time.year
