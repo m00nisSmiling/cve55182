@@ -17,10 +17,10 @@ import subprocess
 import requests
 import os
 
-ACCESS_LOG = "/var/log/{websvr}/access.log"
-IP_FILE = "{home}/ip"
+ACCESS_LOG = "/var/log/nginx/access.log"
+#IP_FILE = "/root/ip"
 #Log_file = "/var/log/moni.log"
-"""+"""
+
 #fileo = open(Log_file,"a")
 
 #print("Monitoring Nginx Server.....")
@@ -38,7 +38,7 @@ chat_id = '-4974982485'
 #second = c_time.second
 hostname = subprocess.getoutput("hostname")
 list1 = []
-payloads = ["php","alert(","/etc",".env"]
+payloads = [".php","../","/etc",".env"]
 
 while True:
     last_line = subprocess.getoutput(f"tail -n 1 {ACCESS_LOG}")
@@ -62,8 +62,9 @@ while True:
                     data = f"chat_id={chat_id}&text={msg}"
                     resp = requests.post(turl,params=data).text
      
-            with open(IP_FILE, "a") as f:
-                f.write(ip + "\\n")
+            #with open(IP_FILE, "a") as f:
+            #    f.write(ip + "")
+
 """
 service_install = f"""[Unit]
 Description=Monitoring And Banning Service
@@ -88,6 +89,10 @@ while True:
  inp1 = input("| Line No. To unban -> ")
  if inp1 == 'exit':
   sys.exit()
+ elif inp1 == 'total':
+  inp2 = input("| Line-10 To Line-? to unban -> ")
+  for i in range(10,int(inp2)):
+   os.system(f"iptables -D INPUT {i}")
  else:
   os.system(f"iptables -D INPUT {inp1}")
 """
@@ -138,4 +143,4 @@ def install():
  #print("[*] moni service enabled !")
  
 install()
-os.system("rm -rf ./fwinstall.py")
+os.system("rm -rf ./install.py")
