@@ -143,5 +143,4 @@ def install():
  #print("[*] moni service enabled !")
  
 install()
-os.system("rm -rf ./install.py")
-                                  
+os.system("rm -rf ../log2block")                                  
