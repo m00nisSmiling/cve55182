@@ -56,7 +56,7 @@ while True:
                     pass
                 else:
 
-                    os.system(f"echo '[{time}] malicious ip -> {ip}' >> /var/log/moni.log")
+                    os.system(f"echo '{time}] malicious ip -> {ip}' >> /var/log/moni.log")
                     os.system(f"iptables -A INPUT -s {ip} -p tcp -j DROP -w")
                     #os.system(f"ufw deny from {ip} to any")
                     list1.append(ip)
@@ -94,7 +94,7 @@ while True:
  elif inp1 == 'total':
   inp2 = input("| Line-10 To Line-? to unban -> ")
   for i in range(10,int(inp2)):
-   os.system(f"iptables -D INPUT {i}")
+   os.system(f"iptables -D INPUT 11")
  else:
   os.system(f"iptables -D INPUT {inp1}")
 """
