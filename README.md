@@ -1,6 +1,6 @@
 # Log2block
 
-### Firewall Installation Steps
+### ***Firewall Installation Steps***
 #### 1. Clone my repo :
 ```
 git clone https://github.com/m00nisSmiling/log2block.git
