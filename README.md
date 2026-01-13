@@ -3,6 +3,8 @@
 - Webserver : Nginx & Apache
 - Privilege : root
 - Operating system : linux
+- Language : [Python](https://www.python.org/)
+- Whoami : m00nissmiling
 
 ### *** Firewall Installation Steps ***
 #### 1. Clone my repo :
