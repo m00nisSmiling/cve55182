@@ -1,5 +1,8 @@
 # Log2block
-### Webserver support :     Nginx & Apache
+- Description : Firewall service to 'ban' malicious HTTP traffic & 'upgrade' web server security
+- Webserver : Nginx & Apache
+- Privilege : root
+- Operating system : linux
 
 ### *** Firewall Installation Steps ***
 #### 1. Clone my repo :
@@ -18,9 +21,7 @@ sudo su
 ```
 python3 install.py
 ```
-``` > Fill your web server name (apache or nginx ...etc)```
-
-``` > Fill username of home directory to install the script files (root or other user ?)```
+``` > Fill your web server name (apache2 or nginx ...etc)```
 
 ``` > Fill telegram bot api key (to report malicious activities using telegram bot)```
 
@@ -41,7 +42,7 @@ systemctl enable moni
 
 ## *** To remove an ip address from banlist ***
 ```
-python3 unban.py
+python3 /root/unban.py
 ```
 
 -------------------------
@@ -51,4 +52,4 @@ python3 unban.py
 cat /var/log/moni.log
 ```
 
-#### *** You can edit malicious payload list in /[home directory of user]/moni.py to block malicious http traffic ***
+## *** You can edit malicious payload list in /root/moni.py to block malicious http traffic ***
