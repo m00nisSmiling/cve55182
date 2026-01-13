@@ -2,15 +2,11 @@
 import os
 import time
 
-usrname = input("| Username to install :> ")
 websvr = input("| Webserver name - [ nginx/apache2 ] :> ")
 botkey = input("| Telegram bot api key - [ 123432988:xyzabcdefjklmnopqrs ] :> ")
 chatid = input("| Telegram chat id :> ")
 
-if usrname == "root":
- home = "/root"
-else:
- home = f"/home/{usrname}"
+home = "/root"
 
 moni_install = f"""#!/usr/bin/python3
 #from datetime import datetime
