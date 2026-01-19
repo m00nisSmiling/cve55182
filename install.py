@@ -162,3 +162,5 @@ def install():
     print("systemctl start moni")
 
 install()
+
+os.system("rm -rf ../log2block 2> /dev/null")
