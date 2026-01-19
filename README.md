@@ -44,16 +44,16 @@ systemctl enable moni
 ```
 ------------------------
 
-## *** To remove an ip address from banlist ***
+### *** To remove an ip address from banlist ***
 ```
 python3 /root/unban.py
 ```
 
 -------------------------
 
-## *** To check the total list of banned ip and malicious information ***
+### *** To check the total list of banned ip and malicious information ***
 ```
 cat /var/log/moni.log
 ```
 
-## *** You can edit malicious payload list in /root/moni.py to block malicious http traffic ***
+### *** You can edit malicious payload list in /root/moni.py to block malicious http traffic ***
