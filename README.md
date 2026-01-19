@@ -1,10 +1,10 @@
 # Log2block
-- Service Description : Firewall service to 'block' malicious HTTP traffic & 'upgrade' web server security
-- Supported Web Server : Nginx & Apache
-- Privilege Requirement : root
-- Supported Os : Linux
-- Package Requirement : [Python3.0](https://www.python.org/)
-- Whoami : [m00nissmiling](https://www.facebook.com/moonissmiling1)
+- Service Description:   Firewall service to 'block' malicious HTTP traffic & 'upgrade' web server security
+- Supported Web Server:   Nginx & Apache
+- Privilege Requirement:   root
+- Supported Os:   Linux
+- Package Requirement:   [Python3.0](https://www.python.org/)
+- Whoami:   [m00nissmiling](https://www.facebook.com/moonissmiling1)
 
 ----------
 
