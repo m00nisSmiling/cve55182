@@ -8,5 +8,5 @@ log = f"/var/log/moni.log"
 
 os.system(f"rm -rf {unban} {moni} {service} {log}")
 time.sleep(1)
-os.system("rm -rf ./uninstall.py")
+os.system("rm -rf ./remove-moni.py")
 print("[!] Uninstalled moni service... ")
