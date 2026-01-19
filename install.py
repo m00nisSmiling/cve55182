@@ -30,7 +30,7 @@ BANNED_LOG = "/var/log/moni.log"
 BOT_TOKEN = "{botkey}"
 CHAT_ID = "{chatid}"
 
-PAYLOADS = [".php", ".git", "/etc", ".env"]
+PAYLOADS = [".php", ".git", "../", ".env","alert("]
 banned_ips = set()
 
 def valid_ip(ip):
