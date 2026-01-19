@@ -4,7 +4,7 @@ import os
 import requests
 from pathlib import Path
 
-os.system("pip3 install requests --break-system-packages &> /dev/null")
+
 # ---------------- USER INPUT ----------------
 websvr = input("| Webserver name [nginx/apache2]: ").strip()
 botkey = input("| Telegram bot api key: ").strip()
