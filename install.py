@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 import time
 import os
+import requests
 from pathlib import Path
 
 # ---------------- USER INPUT ----------------
