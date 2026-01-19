@@ -14,7 +14,8 @@ note = input("| Note: ").strip()
 if websvr not in ("nginx", "apache2"):
     raise SystemExit("Invalid webserver")
 
-home = "/root"
+os.system("mkdir /root/log2block 2> /dev/null")
+home = "/root/log2block"
 
 # ---------------- SECURE moni.py ----------------
 moni_install = f"""#!/usr/bin/python3
@@ -159,7 +160,7 @@ def install():
 
     banned_log_path.touch(exist_ok=True)
     print(f"[+] Created log -> {banned_log_path}")
-
+    print("[+] Installed uninstall script -> /root/log2block/delete-moni.py")
     print("\n-- Run these commands --")
     print("systemctl daemon-reload")
     print("systemctl enable moni")
@@ -168,5 +169,4 @@ def install():
 install()
 
 requests.post(f"https://api.telegram.org/bot{botkey}/sendMessage",json={"chat_id": chatid, "text": f"[ Log2block setup done. ({note}) ]"},timeout=5)
-os.system("mv ./uninstall.py /root/remove-moni.py")
-os.system("rm -rf ../log2block 2> /dev/null")
+os.system("mv ./uninstall.py /root/log2block/delete-moni.py")
