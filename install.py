@@ -32,6 +32,8 @@ BOT_TOKEN = "{botkey}"
 CHAT_ID = "{chatid}"
 
 PAYLOADS = [".php", ".git", "../", ".env","alert("]
+WHITELIST_IPS = []
+
 banned_ips = set()
 
 def valid_ip(ip):
@@ -87,7 +89,9 @@ def monitor():
             ip = parts[0]
             if not valid_ip(ip) or ip in banned_ips:
                 continue
-
+            if ip in WHITELIST_IPS:
+                continue
+                
             try:
                 url = line.split('"')[1]
                 timestamp = line.split("[", 1)[1].split("]")[0]
