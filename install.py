@@ -7,12 +7,18 @@ from pathlib import Path
 
 # ---------------- USER INPUT ----------------
 websvr = input("| Webserver name [nginx/apache2]: ").strip()
+wip = input("| Add persistence whitelist ip address [optional]: ").strip()
 botkey = input("| Telegram bot api key: ").strip()
 chatid = input("| Telegram chat id: ").strip()
 note = input("| Note: ").strip()
 
 if websvr not in ("nginx", "apache2"):
     raise SystemExit("Invalid webserver")
+
+if wip == "" :
+    whitelistip="127.0.0.1"
+else:
+    whitelistip=wip
 
 os.system("mkdir /root/log2block 2> /dev/null")
 home = "/root/log2block"
@@ -32,7 +38,7 @@ BOT_TOKEN = "{botkey}"
 CHAT_ID = "{chatid}"
 
 PAYLOADS = [".php", ".git", "../", ".env","alert("]
-WHITELIST_IPS = []
+WHITELIST_IPS = [{whitelistip}]
 
 banned_ips = set()
 
