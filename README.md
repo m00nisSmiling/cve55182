@@ -12,37 +12,37 @@
 - Whoami:   [m00nissmiling](https://www.facebook.com/moonissmiling1)
 
 <br>
-### Pip requirement 
+
+### Installation Steps
+- pip install requests :
 ```
 pip install requests --break-system-packages
 ```
-
-### Installation Steps
 - Clone my repo :
 ```
 git clone https://github.com/m00nisSmiling/log2block.git
 ```
-- Change directory to log2block
+- Change directory to log2block :
 ```
 cd log2block
 ```
-- Change to root user
+- Change to root user :
 ```
 sudo su
 ```
-- Run installation script
+- Run installation script : 
 ```
 python3 install.py
 ```
-``` > Fill your web server name (apache2 or nginx ...etc)```
+```1. Fill your web server name (apache2 or nginx ...etc)```
 
-``` > Fill telegram bot api key (to report malicious activities using telegram bot)```
+```2. Fill telegram bot api key (to report malicious activities using telegram bot)```
 
-``` > Fill telegram chatid to send banned ip address and malicious informations (report to this chat id)```
+```3. Fill telegram chatid to send banned ip address and malicious informations (report to this chat id)```
 
-``` > Fill custom note to send notification from bot```
+```4. Fill custom note to send notification from bot```
 
-- Start & enable firewall service
+- Start & enable firewall service :
 
 ```
 systemctl daemon-reload
@@ -55,24 +55,24 @@ systemctl enable moni
 ```
 ------------------------
 
-- To remove an ip address from banlist 
+- To remove an ip address from banlist :
 ```
 python3 /root/log2block/unban.py
 ```
 
 -------------------------
 
-- To check the total list of banned ip and malicious information 
+- To check the total list of banned ip and malicious information :
 ```
 cat /var/log/moni.log
 ```
 
-- To delete Logtoblock
+- To delete Logtoblock :
 ```
 python3 /root/log2block/delete-moni.py
 ```
 --------------------------
 
-- You can edit malicious payload list in /root/log2block/moni.py to block malicious http traffic 
+- You can edit malicious payload list in /root/log2block/moni.py to block malicious http traffic.
 
 
