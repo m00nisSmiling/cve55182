@@ -7,6 +7,10 @@
 - Whoami:   [m00nissmiling](https://www.facebook.com/moonissmiling1)
 
 <br><br>
+## * Pip requirement *
+```
+pip install requests --break-system-packages
+```
 
 ## * Installation Steps *
 #### 1. Clone my repo :
