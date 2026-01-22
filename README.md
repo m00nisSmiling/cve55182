@@ -1,4 +1,4 @@
-# Log2block
+<center><h1> Log2block </h1></center>
 - Service Description:   Firewall service to 'block' malicious HTTP traffic & 'upgrade' web server security
 - Supported Web Server:   Nginx & Apache
 - Privilege Requirement:   root
