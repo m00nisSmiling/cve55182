@@ -12,25 +12,25 @@
 - Whoami:   [m00nissmiling](https://www.facebook.com/moonissmiling1)
 
 <br><br>
-## * Pip requirement *
+## Pip requirement 
 ```
 pip install requests --break-system-packages
 ```
 
-## * Installation Steps *
-#### 1. Clone my repo :
+## Installation Steps
+- Clone my repo :
 ```
 git clone https://github.com/m00nisSmiling/log2block.git
 ```
-#### 2. Change directory to log2block
+- Change directory to log2block
 ```
 cd log2block
 ```
-#### 3. Change to root user
+- Change to root user
 ```
 sudo su
 ```
-#### 4. Run installation script
+- Run installation script
 ```
 python3 install.py
 ```
@@ -42,7 +42,7 @@ python3 install.py
 
 ``` > Fill custom note to send notification from bot```
 
-#### 9. Start & enable firewall service
+- Start & enable firewall service
 
 ```
 systemctl daemon-reload
@@ -55,24 +55,24 @@ systemctl enable moni
 ```
 ------------------------
 
-### To remove an ip address from banlist 
+- To remove an ip address from banlist 
 ```
 python3 /root/log2block/unban.py
 ```
 
 -------------------------
 
-### To check the total list of banned ip and malicious information 
+- To check the total list of banned ip and malicious information 
 ```
 cat /var/log/moni.log
 ```
 
-### To delete Logtoblock
+- To delete Logtoblock
 ```
 python3 /root/log2block/delete-moni.py
 ```
 --------------------------
 
-### You can edit malicious payload list in /root/log2block/moni.py to block malicious http traffic 
+- You can edit malicious payload list in /root/log2block/moni.py to block malicious http traffic 
 
 
