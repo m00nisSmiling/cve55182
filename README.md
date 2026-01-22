@@ -1,6 +1,9 @@
 <div align="center">
 
 # Log2block 
+
+</div>
+
 - Service Description:   Firewall service to 'block' malicious HTTP traffic & 'upgrade' web server security
 - Supported Web Server:   Nginx & Apache
 - Privilege Requirement:   root
@@ -73,4 +76,3 @@ python3 /root/log2block/delete-moni.py
 ### You can edit malicious payload list in /root/log2block/moni.py to block malicious http traffic 
 
 
-</div>
