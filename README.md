@@ -14,23 +14,39 @@
 <br>
 
 ### Installation Steps
+
+<br>
+
 - pip install requests :
 ```
 pip install requests --break-system-packages
 ```
+
+<br>
+
 - Clone my repo :
 ```
 git clone https://github.com/m00nisSmiling/log2block.git
 ```
+
+<br>
+
 - Change directory to log2block :
 ```
 cd log2block
 ```
+
+<br>
+
 - Change to root user :
 ```
 sudo su
 ```
+
+<br>
+
 - Run installation script : 
+
 ```
 python3 install.py
 ```
@@ -42,8 +58,10 @@ python3 install.py
 
 ```4. Fill custom note to send notification from bot```
 
-- Start & enable firewall service :
+<br>
 
+
+- Start & enable firewall service :
 ```
 systemctl daemon-reload
 ```
